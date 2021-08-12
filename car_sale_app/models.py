@@ -1,5 +1,6 @@
 from django.db import models
 
+# Car model
 class Car(models.Model):
     id = models.AutoField(primary_key=True)
     vin = models.CharField(max_length=17)
@@ -14,6 +15,8 @@ class Car(models.Model):
     class Meta:
         db_table = "car"
 
+
+# Dealer model
 class Dealer(models.Model):
     id = models.AutoField(primary_key=True)
     name = models.TextField()
