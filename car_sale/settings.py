@@ -93,7 +93,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'carsdb',
         'USER': 'root',
-        'PASSWORD': '2662',
+        'PASSWORD': '',
         'HOST': 'localhost',
         'PORT': '3306',
     }
