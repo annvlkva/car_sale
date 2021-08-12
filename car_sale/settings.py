@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'car_sale_app.apps.CarSaleAppConfig'
+    'car_sale_app.apps.CarSaleAppConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -77,8 +78,12 @@ WSGI_APPLICATION = 'car_sale.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'carsdb',
+        'USER': 'root',
+        'PASSWORD': '2662',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
